@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" type="image/png" href="./images/nexus-favicon.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <a href="#contenido-principal" class="saltar-navegacion">Skip to main content</a>
+
+    <header class="main-header">
+        <div class="container contenedor-nav">
+            <div class="logo-nav"><a href="index.html">NEXUS <span class="punto-logo">.</span></a></div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">PORTFOLIO</a></li>
+                    <li><a href="services.html" class="nav-link">SERVICES</a></li>
+                    <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                    <li><a href="contact.html" class="nav-link active">CONTACT</a></li>
+                </ul>
+            </nav>
+            </div>
+    </header>
+
+        <main id="contenido-principal">
+
+    <div class=" container contact-layout">
+        <section class="container hero-section">
+                <p class="etiqueta">Get In Touch</p>
+                <h1 class="hero-services-contact">Contact Us</h1>
+                <p class="descripcion contact">Ready to start your next project? Fill out the form below and we'll get back to you within 24 hours.</p>
+            <article class="container contact-section">
+                <h4>Let's Talk</h4>
+                <p>Whether you need a new website, a brand refresh, or a full digital strategy — we're here to help. Drop us a line.</p>
+                <div class="lista-contacto">
+                <ul>
+                    <li>Email</li>
+                    <li>hello@nexus.agency</li>
+                    <li>Phone</li>
+                    <li>+1 (212) 555-1234</li>
+                    <li>Address</li>
+                    <li>123 Creative Street <br> New York, NY 10001 <br> United States</li>
+                    <li>Hours</li>
+                    <li>Monday – Friday: 9am – 6pm EST <br> Saturday & Sunday: Closed</li>
+                </ul>
+                </div>        
+            </article>
+    </section>
+    
+    <section class="contact-form">
+    <form action="#" method="POST" class="formulario-contact">
+    
+    <fieldset>
+        <legend>Your Information</legend>
+        
+        <div class="columna-formulario">
+            <div class="campos">
+                <label for="nombre-completo">Full Name <span class="asterisco">*</span></label>
+                <input type="text" id="nombre-completo" name="fullname" placeholder="John Doe" required>
+            </div>
+            
+            <div class="campos">
+                <label for="correo-electronico">Email Address <span class="asterisco">*</span></label>
+                <input type="email" id="correo-electronico" name="email" placeholder="john@company.com" required>
+            </div>
+
+            <div class="campos">
+                <label for="telefono">Phone Number</label>
+                <input type="tel" id="telefono" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+
+            <div class="campos">
+                <label for="empresa">Company</label>
+                <input type="text" id="empresa" name="company" placeholder="Your company name">
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Project Details</legend>
+        
+        <div class="columna-formulario">
+            <div class="campos">
+                <label for="servicio">Service Interest <span class="asterisco">*</span></label>
+                <select id="servicio" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="web-design">Web Design</option>
+                    <option value="brand-identity">Brand Identity</option>
+                    <option value="development">Development</option>
+                    <option value="seo">SEO & Analytics</option>
+                    <option value="digital">Digital Marketing</option>
+                    <option value="full">Full Package</option>
+                </select>
+            </div>
+
+            <div class="campos">
+                <label for="presupuesto">Budget Range</label>
+                <select id="presupuesto" name="budget">
+                    <option value="" disabled selected>Select range</option>
+                    <option value="range-1"> Under $5,000</option>
+                    <option value="range-2">$5,000 – $10,000 </option>
+                    <option value="range-3">$10,000 – $25,000</option>
+                    <option value="range-4">$25,000 – $50,000</option>
+                    <option value="range-5">$50,000+</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="campos total-ancho">
+            <label for="tiempo">Timeline <span class="asterisco">*</span></label>
+            <select id="tiempo" name="timeline" required>
+                <option value="" disabled selected>When do you need to start?</option>
+                <option value="weews"> ASAP (next 2 weeks)</option>
+                <option value="month">Next month</option>
+                <option value="quarter">Newt quarter</option>
+                <option value="flexible">Flexible / Not sure</option>
+            </select>
+        </div>
+
+        <div class="campos total-ancho">
+            <label for="descripcion">Project Description <span class="asterisco">*</span></label>
+            <textarea id="descripcion" name="description" placeholder="Tell us about your project — goals, challenges, and what you're looking to achieve..." required></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>How did you find us?</legend>
+        
+        <div class="campos-opciones">
+            <label class="opcion-seleccionable">
+                <input type="radio" name="procedencia" value="google">
+                <span class="custom-radio"></span>
+                Google Search
+            </label>
+            
+            <label class="opcion-seleccionable">
+                <input type="radio" name="procedencia" value="social">
+                <span class="custom-radio"></span>
+                Social Media
+            </label>
+            
+            <label class="opcion-seleccionable">
+                <input type="radio" name="procedencia" value="referral">
+                <span class="custom-radio"></span>
+                Referral
+            </label>
+            
+            <label class="opcion-seleccionable">
+                <input type="radio" name="procedencia" value="other">
+                <span class="custom-radio"></span>
+                Other
+            </label>
+        </div>
+
+        <div class="campos-checks total-ancho">
+            <label class="opcion-seleccionable checkbox-lbl">
+                <input type="checkbox" name="newsletter" value="yes">
+                <span class="custom-checkbox"></span>
+                Subscribe to our newsletter for design insights and project updates
+            </label>
+
+            <label class="opcion-seleccionable checkbox-lbl">
+                <input type="checkbox" name="privacidad" value="accept" required>
+                <span class="custom-checkbox"></span>
+                I agree to the privacy policy and terms of service <span class="asterisco">*</span>
+            </label>
+        </div>
+    </fieldset>
+
+    <div class="boton-envio">
+        <button type="submit" class="boton verde">SEND MESSAGE</button>
+        <p class="aviso-formulario">We'll review your message and get back to you within 24 hours.</p>
+    </div>
+</form>
+</section>
+</div>
+</main>
+
+     <footer class="container footer-section">
+        <article class="columnas-footer">
+            <div class="columna primera">
+                <h6>Nexus Digital</h6>
+                <p class="descripcion-footer">Creative digital agency crafting bold brands and high-performance websites. Based in New York, working worldwide.</p>
+            </div>
+
+             <div class="columna segunda">
+                <h6>Navigation</h6>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="columna tercera">
+                <h6>Services</h6>
+                 <ul>
+                    <li><a href="services.html#web-design">Web Design</a></li>
+                    <li><a href="services.html#brand-strategy">Brand Strategy</a></li>
+                    <li><a href="services.html#development">Development</a></li>
+                    <li><a href="services.html#seo-marketing">SEO & Marketing</a></li>
+                </ul>
+            </div>
+
+            <div class="columna cuarta">
+                <h6>Contact</h6>
+                 <ul>
+                    <li><a href="contact.html">hello@nexus.agency</a></li>
+                    <li><a href="contact.html">+1 (212) 555-1234</a></li>
+                    <li><a href="contact.html">New York, NY 10001</a></li>
+                </ul>
+            </div>
+
+        </article>
+
+        <hr class="linea">
+
+        <article class="container derechos-autor">
+            <p>© 2026 Nexus Digital Agency. All rights reserved.</p>
+            <div class="redes">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Dribble</a>
+            </div>
+        </article>
+    </footer>
+</body>
+</html>
