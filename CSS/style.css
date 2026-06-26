@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0e0e0e;      
+}
+.saltar-navegacion {
+    position: absolute;
+    top: -60px; 
+    background: #e8c547;
+    color: #000000;
+    padding: 15px;
+    z-index: 1000;
+    transition: top 0.3s;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.saltar-navegacion:focus {
+    top: 10px; 
+    left: 10px;
+}
+h1 {
+    font-family: "Playfair Display", serif; 
+    font-size: 3rem;
+    font-weight: 900; 
+    color: #f0ece4;
+    line-height: 75px;
+    max-width: 350px;
+}
+h2, h3, h4{
+    font-family: "Playfair Display", serif;
+}
+h2{
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    line-height: 1.65;
+    font-family: "DM Sans", sans-serif;
+}
+.nav-pagina{
+    color: #e8c547;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.contenedor-nav{
+    max-width: 1200px;              
+    width: 100%;                    
+    height: 60px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 auto;
+}
+nav {         
+    background-color: #1a1a1a;      
+    width: 100%;      
+    position: fixed;
+}
+.secciones a{
+    color: #f0ece4;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.secciones a:hover{
+    color: #e8c547;
+}
+.titulo-nav {
+    display: flex;
+}
+#icono {
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+    margin-right: 5px;                 
+}
+.seccion-hero{
+    max-width: 1200px; 
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    padding: 60px 0px;
+    margin: 0 auto;
+    justify-content: space-between; 
+}
+.hero-izq{
+    max-width: 50%; 
+}
+.subtitulo-hero{
+    font-weight: 600;
+    color: #e8c547;            
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+}
+.definicion{
+    font-size: 15px;
+    font-weight: 500;
+    color: #f0ece4;
+    max-width: 80%;
+    line-height: 1.5rem;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    color: #9a9589;
+}
+.botones {
+    display: flex; 
+}
+.boton{
+    border-radius: 6px;
+    padding: 13px 15px;
+    font-weight: 600;
+}
+.boton:hover{
+    background-color: #f0d060;
+}
+.dorado {
+    background-color: #e8c547;
+    color: #000000;
+    margin-right: 15px; 
+}
+.transparente {
+    background-color: transparent;
+    color: #e8c547;
+    border: 1px solid #e8c547;
+}
+.transparente:hover{
+    color: #000000;
+}
+.card-dato{
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 25px 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    border: 1px solid #2e2e2e;
+}
+.dato {
+    text-align: center;
+}
+.dato h3 {
+    color: #e8c547;
+    font-size: 2.5rem;
+}
+.dato p {
+    color: #9a9589;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.seccion-artists{
+    background-color: #1a1a1a;
+}
+.inicio-artists{
+    color: #f0ece4;
+    text-align: center;
+    padding: 80px 0;
+}
+.inicio-artists p{
+    color: #9a9589;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.seccioncuadrados-artists{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding-bottom: 70px;
+}
+ .card-grande-arsists{
+    grid-row: 1 / 3; 
+    background-color: #242424;
+    border-radius: 12px;
+    border: 1px solid #2e2e2e;
+    margin-bottom: 20px;
+    padding: 0; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.textos-card-grande {
+    padding: 35px 25px 15px 25px;
+}
+.textos-card-grande .tags {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.contenedor-foto-artista {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px; 
+}
+.contenedor-foto-artista img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+figcaption {
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.55); 
+    color: rgba(255, 255, 255, 0.6);      
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    font-size: 0.75rem;
+}
+figcaption a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+}
+figcaption a:hover {
+    color: #e8c547; /* Que cambie a dorado al pasar el ratón */
+}
+.subrayado{
+    text-decoration: underline;
+}
+.subrayado:hover{
+    color: #f0d060; 
+}
+.card-pequeña-artists{
+    background-color: #242424;
+    border-radius: 12px;
+    border: 1px solid #2e2e2e;
+    flex-direction: column;
+    gap: 8px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.fondo-iconos{
+    background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+    text-align: center;
+    align-items: center;
+    padding: 45px 45px;
+    border-radius: 12px;
+}
+i{
+    color: #e8c547;
+    font-size: 30px;
+}
+.textos{
+    padding: 20px 20px;
+}
+.generos-artista{
+    color: #e8c547;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.subtitulos-cards{
+    color: #f0ece4;
+    margin-bottom: 10px;
+}
+.texto-cards{
+    color: #9a9589;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.tags{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.tags p{
+    background-color: #2e2e2e;
+    margin-right: 10px; 
+    padding: 5px 15px;
+    color: #9a9589;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+.seccion-releases{
+    background-color: #e8c547;
+    margin: 0 auto;
+    width: 100%;
+}
+.inicio-releases{
+    color: #1a1a1a;
+    text-align: center;
+    padding: 80px 0;
+}
+.inicio-releases p{
+    font-weight: 500;
+    margin-top: 20px;
+    color: #2e2e2e;
+}
+.seccioncuadrados-releases{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+.fondo-iconos-releases{
+    background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+    text-align: center;
+    align-items: center;
+    padding: 45px 45px;
+    border-radius: 12px 12px 0 0;
+}
+.fondo-iconos-releases p{
+    background-color: #f0d060;
+    margin: 0;
+    width: fit-content; 
+    margin-left: auto;       
+    margin-right: -25px; 
+    margin-top: -20px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+.card-grande-artists{
+    grid-row: 1/4;
+    background-color: #1a1a1a;
+    border: 1px solid #2e2e2e;
+    border-radius: 12px;
+}
+.card-pequeña-releases{
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px 25px;
+    border: 1px solid #2e2e2e;
+}
+ol{
+    font-family: "DM SANS", sans-serif;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #f0ece4;
+    list-style-position: inside; 
+    list-style-type: decimal-leading-zero;
+    padding-left: 0;
+    margin-left: 30px;
+}
+ol li::marker {
+    color: #e8c547; 
+    font-weight: 900; 
+    font-family: "Playfair Display", serif; 
+    font-size: 23px;
+}
+ol li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2e2e2e;
+    border-top: 1px solid #2e2e2e;
+}
+.releases{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.seccion-studio{
+    max-width: 1200px; 
+    width: 100%;
+    display: flex; 
+    padding: 60px 40px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.studio-izq{
+    max-width: 50%;
+    padding: 35px;
+}
+.studio-izq h2{
+    color: #f0ece4;
+    margin-bottom: 20px;
+    top: 20px;
+}
+.studio-izq{
+    color: #9a9589;
+}
+.seccioncuadrados-studio{
+     grid-template-columns: 1fr 1fr;
+     display: grid;
+     gap: 20px;
+}
+.card-pequeña-studio{
+    background-color: #1a1a1a; 
+    border-radius: 12px;       
+    padding: 20px 0;
+    border: 1px solid #242424
+}
+.card-grande-arsists:hover, 
+.card-pequeña-artists:hover, 
+.card-grande-artists:hover, 
+.card-pequeña-releases:hover, 
+.card-pequeña-studio:hover
+, .card-dato:hover {
+    border-color: #e8c547;
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+.iconos-studio{
+    padding: 5px 20px;
+}
+ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+ul li {
+    position: relative;
+    padding-left: 30px; 
+    font-family: "DM Sans", sans-serif;
+    color: #f0ece4; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2rem;
+}
+ul li::before {
+    content: "\f00c"; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #e8c547; 
+    font-size: 16px;
+}
+.seccion-contact{
+    background-color: #242424;
+    width: 100%;
+    padding: 60px 0;
+}
+.seccion-contact-dos{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.texto-contact{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.texto-contact h2{
+    margin-bottom: 20px;
+    color: #f0ece4;
+}
+.texto-contact p{
+    color: #9a9589;
+    font-weight: 500;
+}
+.informacion-contact{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 900;
+}
+.informacion-contact p{
+    line-height: 3rem;
+}
+.mail{
+    color: #e8c547;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    margin-right: 15px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.number{
+    color: #e8c547;
+    display: flex;
+    justify-content: center;
+}
+.adress{
+    color: #9a9589;
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    text-align: center;
+}
+.fa-brands{
+    padding: 30px 10px;
+    color: #9a9589;
+    font-size: 25px;
+}
+.fa-brands:hover{
+    color: #e8c547;
+}
+.card-grande-arsists, 
+.card-pequeña-artists, 
+.card-grande-artists, 
+.card-pequeña-releases, 
+.card-pequeña-studio, 
+.card-dato,
+.secciones a,
+.boton,
+.fa-brands {
+    transition: all 0.3s ease;
+}
+.seccion-footer{
+    width: 100%;
+    background-color: #080808;
+}
+.footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer p{
+    max-width: 1200px;
+    text-align: center;
+    color: #9a9589;
+    padding: 20px 0;
+    margin: 0 auto;
+}
